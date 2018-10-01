@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#define n 5
+#define n 10
 int front=-1;
 int rear=-1;
 int q[1100];
