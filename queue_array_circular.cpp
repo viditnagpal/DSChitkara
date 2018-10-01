@@ -5,7 +5,7 @@ using namespace std;
 int front=-1;
 int rear=-1;
 int q[1100];
-
+int temp;
 void insert(int it){
 	if(rear+1==n){
 		cout<<"queue overflow"<<endl;
@@ -42,14 +42,15 @@ void remove(){
 }
 
 void traverse(){
-	for(int i=front;i<=rear;i++){
+	int i;
+	for(i=front;i<=rear;i++){
 		cout<<q[i]<<" ";
 	}
 }
 
 int main(){
 	int i, item;
-	
+	int max, min = 0;
 	char c;
 	
 	cout<<"enter i to add, r to remove";
